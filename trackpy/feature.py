@@ -573,7 +573,7 @@ def batch(frames, diameter, output=None, meta=None, processes=1,
                 features['frame'] = i  # just counting iterations
             features = after_locate(frame_no, features)
 
-            logger.info("Frame %d: %d features", frame_no, len(features))
+            # logger.info("Frame %d: %d features", frame_no, len(features))
             if len(features) > 0:
                 # Store if features were found
                 if output is None:
